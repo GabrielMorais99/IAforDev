@@ -1,0 +1,33 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+artifacts/
+
+# .NET
+bin/
+obj/
+*.user
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+appsettings.Development.json
+
+# Data and models
+data/private/
+*.joblib
+*.onnx
+*.pt
+*.pth
+
+# OS
+.DS_Store
+Thumbs.db
