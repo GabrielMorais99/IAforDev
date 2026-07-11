@@ -8,232 +8,81 @@ Este plano organiza a formação em **40 semanas de 9 horas**, totalizando 360 h
 - 3h — laboratório guiado;
 - 2h — exercício sem solução pronta;
 - 1h — testes, documentação e refatoração;
-- 1h — evolução do Tech Challenge.
-
-## Fase 1 — Fundamentos, Machine Learning e visão computacional
-
-### Semana 1 — Como sistemas de IA aprendem
-
-**Conteúdo:** IA simbólica e estatística, aprendizado supervisionado/não supervisionado, features, labels, treino, validação, teste, inferência, generalização e overfitting.
-
-**Laboratório:** construir um classificador por regras e compará-lo com um modelo treinado.
-
-**Entrega:** glossário próprio e ADR explicando quando não usar IA.
-
-### Semana 2 — Python para ciência de dados
-
-**Conteúdo:** ambientes virtuais, módulos, typing, NumPy, pandas, notebooks versus scripts, leitura de CSV/JSON, tratamento de nulos e testes.
-
-**Laboratório:** pipeline reproduzível de limpeza e análise exploratória.
-
-**Entrega:** pacote Python instalável localmente com testes.
-
-### Semana 3 — Regressão e classificação
-
-**Conteúdo:** regressão linear/logística, KNN, SVM, separação treino/teste, normalização, variáveis categóricas e baseline.
-
-**Laboratório:** previsão de valor e classificação binária.
-
-**Entrega:** relatório comparando pelo menos três modelos.
-
-### Semana 4 — Árvores, ensembles e pipelines
-
-**Conteúdo:** decision tree, random forest, gradient boosting, feature importance, ColumnTransformer e Pipeline do scikit-learn.
-
-**Laboratório:** pipeline completo sem vazamento entre treino e teste.
-
-**Entrega:** endpoint de inferência com contrato versionado.
-
-### Semana 5 — Métricas e validação
-
-**Conteúdo:** matriz de confusão, precision, recall, F1, ROC-AUC, PR-AUC, MAE, RMSE, validação cruzada, desbalanceamento e threshold.
-
-**Laboratório:** otimizar limiar com base em custo de negócio.
-
-**Entrega:** model card inicial.
-
-### Semana 6 — Agrupamento e redução de dimensionalidade
-
-**Conteúdo:** K-Means, DBSCAN, PCA, escalonamento, distância, escolha de número de clusters e limitações interpretativas.
-
-**Laboratório:** segmentação exploratória de registros.
-
-**Entrega:** análise de estabilidade dos clusters.
-
-### Semana 7 — Visão computacional e OCR
-
-**Conteúdo:** imagem como tensor, filtros, detecção, segmentação, OCR, CNNs, transfer learning, YOLO, riscos de reconhecimento facial e GANs.
-
-**Laboratório:** extrair texto de imagens e detectar objetos em um conjunto pequeno.
-
-**Entrega:** API de OCR com score de confiança e fallback manual.
-
-### Semana 8 — Checkpoint da fase 1
-
-**Desafio:** receber um documento ou imagem, extrair conteúdo, classificar o tipo e devolver resultado estruturado.
-
-**Evidências:** dataset, notebook exploratório, pipeline de treino, API, testes, métricas e README.
-
-## Fase 2 — NLP, cloud, algoritmos genéticos, GenAI e LLMs
-
-### Semana 9 — Fundamentos de NLP
-
-Tokenização, normalização, stop words, stemming, lematização, n-gramas e problemas específicos do português.
-
-### Semana 10 — Representação de texto
-
-Bag of Words, TF-IDF, similaridade, embeddings clássicos, Word2Vec, GloVe e comparação com embeddings modernos.
-
-### Semana 11 — Informação linguística
-
-Part-of-speech, parsing, dependências, NER, classificação de sentimento, tópicos e avaliação de NLP.
-
-### Semana 12 — Transformers e LLMs
-
-Attention, tokenização subword, pretraining, instruction tuning, contexto, temperatura, amostragem, alucinação e limites.
-
-### Semana 13 — Cloud para ML
-
-Treino versus inferência, CPU/GPU, batch versus online, containers, autoscaling, storage, filas, registry, custo e arquitetura portátil entre AWS, Azure e GCP.
-
-### Semana 14 — Algoritmos genéticos
-
-Representação de indivíduos, fitness, seleção, crossover, mutação, elitismo, convergência, exploração versus explotação e casos adequados.
-
-### Semana 15 — GenAI aplicada
-
-Geração de texto, imagem, áudio e vídeo; controle de entrada/saída; procedência; direitos autorais; riscos de deepfake; revisão humana.
-
-### Semana 16 — Checkpoint da fase 2
-
-**Desafio:** classificador de documentos em português com busca semântica e chatbot básico, publicável em container.
-
-## Fase 3 — OpenAI, prompting, RAG, LangChain e LangGraph
-
-### Semana 17 — APIs de modelos
-
-Autenticação, modelos, mensagens, Responses API, streaming, structured output, function calling, retries, rate limits, idempotência e custos.
-
-### Semana 18 — Engenharia de prompts
-
-Instruções, contexto, exemplos, delimitadores, formatos, decomposição, autoavaliação, testes adversariais e versionamento.
-
-> O curso trabalha com raciocínio verificável e decomposição de tarefas, mas não depende de solicitar ou armazenar raciocínio privado do modelo.
-
-### Semana 19 — Evals para prompts e LLMs
-
-Golden dataset, critérios, graders determinísticos e por modelo, regressão de prompt, factualidade, groundedness, relevância, segurança e custo.
-
-### Semana 20 — Embeddings e recuperação
-
-Chunking, overlap, metadados, busca vetorial, híbrida, filtros, reranking, recall da recuperação e atualização de índice.
-
-### Semana 21 — RAG de ponta a ponta
-
-Ingestão, parsing, deduplicação, indexação, consulta, geração com citações, abstention, cache, avaliação e observabilidade.
-
-### Semana 22 — Fine-tuning e alternativas
-
-Quando usar prompting, RAG, tool calling ou fine-tuning; preparação de dataset; splits; qualidade; privacidade; avaliação pré/pós; rollback.
-
-### Semana 23 — LangChain e LangGraph
-
-Loaders, splitters, retrievers, tools, chains, estado, nós, arestas, persistência, interrupção humana, retry e multiagentes.
-
-### Semana 24 — Checkpoint da fase 3
-
-**Desafio:** assistente corporativo com RAG, referências, tools autorizadas, avaliação automatizada e API ASP.NET Core.
-
-## Fase 4 — Multimodalidade, AWS e APIs de produção
-
-### Semana 25 — Vídeo e visão temporal
-
-Frames, tracking, detecção de atividade, eventos, custo computacional, privacidade e amostragem.
-
-### Semana 26 — Áudio e fala
-
-Speech-to-text, diarização, timestamps, ruído, idiomas, PII, resumos e análise de chamadas.
-
-### Semana 27 — Classificação e sumarização de texto
-
-Taxonomias, multi-label, tópicos, resumos extrativos/abstrativos, factualidade e avaliação humana.
-
-### Semana 28 — AWS Textract e Comprehend
-
-OCR gerenciado, formulários/tabelas, jobs assíncronos, entidades, frases-chave, sentimento e integração orientada a eventos.
-
-### Semana 29 — APIs multimodais
-
-Entradas de imagem, áudio e arquivo; outputs estruturados; validação; limites de tamanho; armazenamento; redaction.
-
-### Semana 30 — Processamento assíncrono
-
-Filas, workers, retry com backoff, dead-letter queue, idempotência, status de job, webhooks e compensação.
-
-### Semana 31 — Resiliência e custo
-
-Timeout, circuit breaker, rate limiting, cache, fallback, batching, quotas, budgets e medição por tenant.
-
-### Semana 32 — Checkpoint da fase 4
-
-**Desafio:** pipeline multimodal que recebe arquivo, processa em background, extrai sinais e publica resultado auditável.
-
-## Fase 5 — Privacidade, segurança, Azure e detecção de anomalias
-
-### Semana 33 — LGPD aplicada a sistemas de IA
-
-Finalidade, necessidade, transparência, bases legais, dados pessoais/sensíveis, retenção, direitos do titular, operadores e registro de tratamento.
-
-### Semana 34 — Segurança para LLMs
-
-Prompt injection, indirect injection, data exfiltration, insecure output handling, excessive agency, poisoning, supply chain e denial of wallet.
-
-### Semana 35 — Controles de arquitetura
-
-Allowlist de tools, sandbox, autorização por recurso, isolamento de tenant, redaction, secrets, logs seguros, moderação e human approval.
-
-### Semana 36 — Azure Document Intelligence e Vision
-
-Extração de documentos, modelos pré-construídos/customizados, OCR, layout, confiança, integração e tratamento de falhas.
-
-### Semana 37 — Azure AI Search e RAG empresarial
-
-Índices, busca textual/vetorial/híbrida, filtros, segurança por documento, chunking, semantic ranking e atualização incremental.
-
-### Semana 38 — Detecção de anomalias
-
-Z-score robusto, IQR, Isolation Forest, One-Class SVM, Local Outlier Factor, séries temporais, thresholds e investigação.
-
-### Semana 39 — Operação de IA
-
-Model registry, feature/data drift, prompt drift, tracing, SLIs/SLOs, incidentes, feedback, rollback e governança.
-
-### Semana 40 — Entrega final e hackathon
-
-Demonstração do produto completo, ataque controlado, correção, avaliação final, arquitetura, custos, roadmap e retrospectiva.
-
-## Carga por tipo de atividade
-
-| Atividade | Horas |
-|---|---:|
-| Conteúdo e leitura | 80 |
-| Laboratórios guiados | 110 |
-| Exercícios independentes | 60 |
-| Tech Challenge | 70 |
-| Testes, documentação e revisão | 25 |
-| Avaliações e apresentação | 15 |
-| **Total** | **360** |
-
-## Evidências de aprendizagem
-
-Ao final de cada semana, registre:
-
-- hipótese ou problema estudado;
-- dataset e licença;
-- experimento e parâmetros;
-- resultado e métrica;
-- erro encontrado;
-- decisão arquitetural;
-- próximo passo.
-
-O objetivo do plano não é apenas “terminar vídeos”, mas produzir evidências reproduzíveis de competência.
+- 1h — revisão, avaliação e diário de aprendizagem.
+
+## Fase 1 — Fundamentos, ML e visão (semanas 1–8)
+
+| Semana | Tema | Entrega |
+|---:|---|---|
+| 1 | Fundamentos de IA e formulação de problemas | mapa de decisão regra x ML x LLM |
+| 2 | Python, NumPy, pandas e qualidade de dados | pipeline de validação de CSV |
+| 3 | Regressão e classificação | três baselines comparados |
+| 4 | Pipelines, cross-validation e métricas | relatório reproduzível |
+| 5 | Clustering e PCA | análise de segmentação |
+| 6 | CNN, transfer learning e OCR | experimento de visão |
+| 7 | API de inferência, testes e container | serviço executável |
+| 8 | Checkpoint | Document Intake API |
+
+## Fase 2 — NLP, cloud, otimização e LLMs (semanas 9–16)
+
+| Semana | Tema | Entrega |
+|---:|---|---|
+| 9 | NLP clássico e português | classificador TF-IDF |
+| 10 | Embeddings e busca semântica | avaliação Recall@k/MRR |
+| 11 | NER e extração híbrida | extrator auditável |
+| 12 | Transformers e LLMs | relatório conceitual e benchmark |
+| 13 | Arquitetura de ML na cloud | diagrama multi-cloud |
+| 14 | Algoritmos genéticos | otimizador comparado a baseline |
+| 15 | IA generativa e chatbot | gateway de LLM com mock |
+| 16 | Checkpoint | Semantic Document Assistant v1 |
+
+## Fase 3 — RAG e agentes (semanas 17–24)
+
+| Semana | Tema | Entrega |
+|---:|---|---|
+| 17 | Prompt engineering e versionamento | catálogo de prompts |
+| 18 | Structured output e tool calling | tools validadas |
+| 19 | Ingestão, chunking e metadados | índice documental |
+| 20 | Busca híbrida e reranking | benchmark de recuperação |
+| 21 | Avaliação de RAG | dataset de 50 perguntas |
+| 22 | LangChain ou composição direta | pipeline comparado |
+| 23 | LangGraph, estado e agentes | workflow com aprovação |
+| 24 | Checkpoint | Enterprise Knowledge Assistant |
+
+## Fase 4 — Multimodalidade e APIs (semanas 25–32)
+
+| Semana | Tema | Entrega |
+|---:|---|---|
+| 25 | Ingestão multimodal segura | contrato comum de arquivos |
+| 26 | Áudio, transcrição e diarização | transcrição com timestamps |
+| 27 | Vídeo, frames e timeline | indexador temporal |
+| 28 | OCR e Document AI | extração normalizada |
+| 29 | AWS AI Services e arquitetura orientada a eventos | diagrama/IaC ou mock |
+| 30 | APIs assíncronas, filas e DLQ | job API resiliente |
+| 31 | Avaliação multimodal | relatório de métricas/custo |
+| 32 | Checkpoint | Multimodal Processing Hub |
+
+## Fase 5 — Segurança, Azure e produção (semanas 33–40)
+
+| Semana | Tema | Entrega |
+|---:|---|---|
+| 33 | LGPD e inventário de dados | matriz de tratamento |
+| 34 | Threat modeling para IA | modelo de ameaças |
+| 35 | Prompt injection e segurança de tools | suíte de ataques |
+| 36 | Detecção de anomalias | detector com explicação |
+| 37 | Arquitetura Azure | desenho e IaC parcial |
+| 38 | LLMOps/MLOps e quality gates | pipeline de promoção |
+| 39 | Observabilidade, SLO e incidentes | dashboards e runbook |
+| 40 | Tech Challenge final | apresentação e demonstração |
+
+## Regra de progresso
+
+Não avance apenas por ter lido o conteúdo. Uma semana termina quando há uma entrega versionada, testes básicos, métricas quando aplicáveis e uma breve explicação das decisões tomadas.
+
+## Ritmo alternativo
+
+- **Intensivo:** 18h/semana, aproximadamente 5 meses.
+- **Regular:** 9h/semana, 10 meses.
+- **Leve:** 6h/semana, aproximadamente 15 meses.
+
+Mantenha a ordem das dependências, mas adapte datasets e problemas ao seu domínio profissional.
